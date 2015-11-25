@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Titillium Web',"roboto condensed", sans-serif;
+}
+
+.menu-bg{
+    background-color: rgba(0,0,0,.7);
+}
+.menu-padding{
+    padding-top: 20px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f89731;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+}
+.navbar-toggle {
+    margin-top: 20px;
+}
+.navbar-right {
+    margin-top: 10px;
+}
+
+
+#slider{
+    background: url("../images/background.jpg");
+}
+.slider-overlay{
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.carousel-control.right{
+     background-image: none;
+ }
+.carousel-control.left{
+    background-image: none;
+}
+.item{
+    padding: 150px 0;
+    color: #fff;
+}
+.item span{
+    color: #f89731;
+}
+.item h3{
+    font-size: 50px;
+
+}
+.item h1{
+  font-size: 100px;
+    max-width: 750px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+.item h4{
+    font-size: 40px;
+
+}
+
+.carousel-indicators li{
+    background-color: #ffffff;
+    border-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+}
+.carousel-indicators .active{
+    background-color: #f89731;
+     border-color: #f89731;
+     width: 15px;
+     height: 15px;
+     margin: 2px;
+ }
+#about{
+    padding: 70px 0;
+}
+.about-top{
+    margin-bottom: 70px;
+
+}
+.about-top h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+}
+.about-top p{
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.about-icon{
+    margin-bottom: 30px;
+}
+
+.about-icon i{
+    font-size: 40px;
+}
+.about-icon:hover i,
+.about-icon:hover h2{
+    color: #f89731;
+}
+.about-icon h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.about-icon p{
+    font-size: 14px;
+
+}
+
+
+#service{
+    background: #E1E1E1;
+    padding: 70px 0;
+}
+.service-top{
+    margin-bottom: 70px;
+}
+.service-top h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+}
+.service-top p{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.service-contain img{
+    width: 100%;
+}
+.service-image{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.service-image-overlay{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    top: -100%;
+
+}
+.service-image:hover .service-image-overlay{
+    top: 0;
+}
+
+.link-icon{
+    position: absolute;
+    bottom: -100%;
+    left: 35%;
+    transition: .5s;
+}
+.link-icon i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 12px;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.service-image:hover .link-icon{
+    bottom: 40%;
+}
+.link-icon i:hover{
+    background: #f89731;
+    border: 1px solid #f89731;
+}
+#portfolio{
+    padding: 70px 0;
+}
+/*.portfolio-top{
+    margin-bottom: 70px;
+
+}*/
+
+.portfolio-top h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.portfolio-top p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 14px;
+
+}
+/*-----Isotope css------*/
+
+/* ---- button ---- */
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    background: #f89731;
+    border: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.button:hover {
+    background-color: #ffe229;
+    color: #fff;
+}
+
+.button:active,
+.button.is-checked {
+    background-color: #ffe229;
+}
+
+.button.is-checked {
+    color: white;
+}
+
+
+
+/* ---- button-group ---- */
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-group{
+    margin-bottom: 70px;
+}
+.button-group .button {
+    margin: 4px auto;
+}
+
+
+/* ---- .element-item ---- */
+
+.element-item {
+    position: relative;
+    float: left;
+    width: 33%;
+    border: 10px solid #ffffff;
+    overflow: hidden;
+}
+
+.element-item img{
+    width: 100%;
+}
+.isotope-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top:-100%;
+    transition: .5s;
+
+}
+.isotope-overlay h2{
+    color: #FFA210;
+    margin-top: 134px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.element-item:hover .isotope-overlay{
+    top: 0;
+}
+
+
+#pricing-table{
+padding: 70px 0;
+    background-color: #E1E1E1;
+
+}
+.pricing{
+    background-color: #222222;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    transition: .5s;
+    margin-bottom:30px;
+}
+.pricing-top{
+    width: 130px;
+    height: 130px;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    margin: 0 auto;
+    transition: .5s;
+    margin-top: 0;
+}
+.pricing-top p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.pricing-top sup{
+    font-size: 12px;
+    top: -9px;
+    left: -2px;
+}
+.pricing-top em{
+    font-size: 25px;
+    font-weight: bold;
+}
+.pricing-top span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing ul{
+    padding: 0;
+    margin-top: 25px;
+}
+.pricing ul li{
+    max-width: 130px;
+    border-bottom: 1px solid #ffffff;
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.btn{
+    margin-top: 25px;
+    background-color:#FFA210;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0;
+    transition: .5s;
+    
+}
+.pricing:hover{
+    background-color: #FFA210;
+
+}
+.pricing:hover .btn{
+    background-color: #ffffff;
+    color: #FFA210;
+}
+.pricing:hover .pricing-top{
+    background-color: #ffffff;
+    color: #FFA210;
+}
+
+#counterup{
+    background: url("../images/count.jpg")no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.count-overlay{
+    background: rgba(0,0,0,0.5);
+    padding: 70px 0;
+}
+
+.count{
+    border: 1px solid #BBBBBB;
+    padding: 10px 0;
+    background: rgba(0,0,0,.3);
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.count span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.count h3{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 0;
+
+}
+
+#contact-us{
+    padding: 70px 0;
+}
+.contact{
+    margin-bottom: 30px;
+}
+.contact i{
+    font-size: 60px;
+    transition: .5s;
+
+}
+.contact h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .5s;
+}
+.contact h4{
+    font-size: 14px;
+}
+.contact:hover i,
+.contact:hover h3{
+    color: #FFA210 ;
+}
+
+#contact-form{
+    background: #E1E1E1;
+    padding: 70px 0;
+}
+
+.btn-submit{
+    margin-top: 0;
+}
+.form-control{
+    border-radius: 0;
+}
+.form-group {
+    margin-bottom: 7px;
+}
+
+#map {
+    width:100%;
+    height: 400px;
+}
+
+#footer{
+    padding: 5px 0;
+    background: #000000;
+    color: #ffffff;
+}
+.footer-icon a{
+    margin-right: 10px;
+    color: #ffffff;
+    padding-top: 5px;
+}
+.footer-icon a:hover{
+    color: #FFA210;
+}
+
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 35px;
+    color: #ffffff;
+    background: #FFA210;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+
+}
